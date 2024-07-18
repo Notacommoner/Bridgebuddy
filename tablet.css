@@ -355,6 +355,10 @@
         justify-content: center;
         margin-top: 50px;
     }
+
+    .rev-img {
+        display: none;
+    }
                 /* End of testimonial */
     
                 /* footer */

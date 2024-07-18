@@ -333,6 +333,10 @@ nav a {
     margin-top: 50px;
 }
 
+.rec-img {
+    display: none;
+}
+
             /* End of testimonial */
 
             /* footer */
