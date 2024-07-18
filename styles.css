@@ -66,6 +66,10 @@ nav a {
     gap: 10px;
 }
 
+#ham {
+    display: none;
+}
+
 .sign-in {
     display: inline-flex;
     padding: 10px 20px;
