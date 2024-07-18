@@ -307,8 +307,11 @@ nav a {
                 /* Testimonials */
                 /* Testimonials */
 .testimonials .container {
+    display: flex;
+    flex-direction: column;
     margin-top: 70px;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonials .container .heading {
