@@ -295,6 +295,8 @@ nav a {
     justify-content: space-around;
     margin-top: 70px;
 }
+
+
                 /* End of partners */
 
 
@@ -330,6 +332,15 @@ nav a {
     justify-content: center;
     margin-top: 50px;
 }
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    margin-top: 20px;
+}
+
             /* End of testimonial */
 
             /* footer */

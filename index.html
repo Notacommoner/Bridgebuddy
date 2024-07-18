@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bridgebuddy</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="laptop.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
 
     <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
-
-//
 <body>
     <header>
         <div class="container">
@@ -29,12 +30,15 @@
                 <h2 class="sign-in">Sign In</h2>
                 <h2 class="sign-up">Sign Up</h2>
             </div>
+            <div>
+                <img src="./hamburger.svg" alt="">
+            </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container">
-                <div class="hero-content">
+                <div class="hero-content" id="hero-content">
                     <h2>Translate your <span class="highlight">Text</span>
                         <br> and <span class="highlight">Documents</span></h2>
                     <p>BridgeBuddy is an advanced language translation model
@@ -43,7 +47,7 @@
                         <br> translations for effective cross-language communication.</p>
                     <h2 class="translate">Translate</h2>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image" id="hero-image">
                     <img src="./heroimage.svg" alt="BridgeBuddy App">
                 </div>
             </div>
@@ -67,9 +71,7 @@
         <section class="services">
             <div class="container">
                 <h2>Our Services</h2>
-                <p>BridgeBuddy offers precise text translations, real-time conversation translation,
-                    <br> website localization, multilingual customer support, educational resource translation, and mobile app integration, ensuring
-                    <br> seamless and effective communication across languages.</p>
+                <p>Our Comprehensive Solutions for Seamless Multilingual Communication</p>
                 <div class="service-cards">
                      <div>
                         <img src="./accuratetrans.svg" alt="">
@@ -86,7 +88,7 @@
         <section class="features">
             <div class="container">
                 <div class="heading"><h2>Features</h2>
-                <p>BridgeBuddy features advanced machine learning algorithms, real-time translation capabilities, contextual accuracy, multilingual support, user-friendly integration, and continuous learning for improved precision.</p>
+                <p>Our Advanced Capabilities for Enhanced Translation and Communication</p>
                 </div>
                 <div class="feature-cards">
                     <div class="card">
@@ -99,11 +101,11 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="ftext">
+                        <div class="ftext" id="ftext">
                         <h3>Real Time Translation</h3>
                         <p>BridgeBuddy offers real-time, accurate translation for live conversations, meetings, and events. It uses advanced machine learning for precise, contextually appropriate translations, ensuring effective multilingual communication.</p>
                         </div>
-                        <div>
+                        <div id="image">
                             <img src="./realtimefeature.svg" alt="">
                         </div>
                     </div>
@@ -126,8 +128,8 @@
                 <p>These organizations put their trust in us</p>
                 </div>
                 <div class="partner-logos">
-                    <img src="./tiidelab.svg" alt="Partner 1">
-                    <img src="./shamzbridge.svg" alt="Partner 2">
+                    <img class="tiidelab" src="./tiidelab.svg" alt="Partner 1">
+                    <img class="shams" src="./shamzbridge.svg" alt="Partner 2">
                 </div>
             </div>
         </section>
@@ -137,11 +139,15 @@
                 <h2>Testimonials</h2>
                 <p>Hear From Our Satisfied Users: Real Experiences with BridgeBuddy</p>
                 </div>
-                <div class="testimonial">
-                    <img src="./Testimonial.svg" alt="Testimonial Person">
+                <div id="desktop">
+                   <img src="./Testimonial.svg" alt="">  
                 </div>
-            </div>
+                <div id="mobile">
+                    <img src="./revimg.svg" alt="">
+                </div>
+            </div>   
         </section>
+
     </main>
     <footer>
         <div class="container">
