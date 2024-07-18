@@ -175,13 +175,13 @@
     .stats .container .stat h3 {
         color: var(--primary);
         font-family: Inter;
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .stats .container .stat p {
         color: #000;
         font-family: Inter;
-        font-size: 10px;
+        font-size: 12px;
     }
                 /* End of hero section */
     
@@ -345,6 +345,8 @@
     
                     /* Testimonials */
                     /* Testimonials */
+
+    
     .testimonials .container {
         margin-top: 70px;
     
@@ -353,6 +355,7 @@
     .testimonials .container .heading {
         display: flex;
         flex-direction: column;
+        margin-top: 40px;
     }
     
     .testimonials .container .heading h2 {
@@ -368,13 +371,26 @@
         font-family: Inter;
         font-size: 12px;
         margin-top: 10px;
+        margin-bottom: 15px;
     }
     
-    .testimonials .container .testimonial {
+    .testimonials .container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         margin-top: 30px;
+        align-items: center;
     }
+
+    
+
+
+    #desktop {
+        display: none; /* Hide desktop on mobile devices */
+     }
+     #mobile {
+        display: block; /* Show mobile on mobile devices */
+     }
     
     
                 /* End of testimonial */

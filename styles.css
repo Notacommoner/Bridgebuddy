@@ -333,8 +333,12 @@ nav a {
     margin-top: 50px;
 }
 
-.rec-img {
+#mobile {
     display: none;
+}
+
+#desktop {
+    margin-top: 20px;
 }
 
             /* End of testimonial */
