@@ -1,4 +1,4 @@
-@media (max-width: 1440px) {
+@media (max-width: 1350px) {
     *{
         margin: 0;
         box-sizing: border-box;
@@ -196,9 +196,9 @@
     
     .formal-buttons .formal {
         display: flex;
-        width: 122px;
-        height: 40px;
-        padding: 0px 9px;
+        width: 168px;
+        height: 55px;
+        padding: 0px 12px;
         align-items: center;
         gap: 3px;
     
@@ -214,9 +214,9 @@
     
     .formal-buttons .casual {
         display: flex;
-        width: 122px;
-        height: 40px;
-        padding: 0px 9px;
+        width: 168px;
+        height: 55px;
+        padding: 0px 12px;
         align-items: center;
         gap: 3px;
     
