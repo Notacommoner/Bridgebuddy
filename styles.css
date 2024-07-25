@@ -246,6 +246,10 @@ nav a {
     justify-content: space-between;
 }
 
+.features .container .feature-cards .card img {
+    width: 70%;
+}
+
 
 .features .container .feature-cards .card .ftext {
     display: flex;
@@ -264,7 +268,7 @@ nav a {
     color: #000;
     font-family: Inter;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
                 /* End of features */
 
@@ -346,6 +350,7 @@ nav a {
 
 #desktop {
     margin-top: 20px;
+    width: 80%;
 }
 
             /* End of testimonial */

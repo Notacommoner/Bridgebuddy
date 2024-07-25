@@ -250,6 +250,10 @@
         display: flex;
         justify-content: space-between;
     }
+
+    .features .container .feature-cards .card img {
+        width: 70%;
+    }
     
     
     .features .container .feature-cards .card .ftext {
@@ -269,7 +273,7 @@
         color: #000;
         font-family: Inter;
         font-size: 15px;
-        margin-top: 40px;
+        margin-top: 10px;
     }
                     /* End of features */
     
