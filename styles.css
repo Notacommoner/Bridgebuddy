@@ -2,20 +2,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 :root {
     --primary:  #305CDE;
     --white: #ffffff;
-  }
-
+}
 html {
     scroll-behavior: smooth;
 }
-
 a {
     text-decoration: none;
 }
-  
+
 /* Make image,video, and audio tag to take 100% of the screen to fix
 overflow or horizontal scrolling */
 img,
@@ -337,7 +334,7 @@ nav a {
 footer .container {
     margin-top: 150px;
     display: flex;
-
+justify-content: center;
     color: #000;
     font-family: Inter;
     font-size: 20px;
@@ -349,7 +346,25 @@ footer .container {
     gap: 10px;
 }
 
+/* mobile size screen */
+@media screen and (min-width: 567px) {
+header .container nav {
+    position: relative;
+    top: 50px;
+    right: 50px;
+display: flex;
+flex-direction: column;
 
+}
+.auth-buttons{
+    display: inline-block;
+
+}
+.hero .hero-content{
+    text-align: center;
+    word-break:normal;
+}
+}
 
 
 
