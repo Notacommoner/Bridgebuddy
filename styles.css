@@ -63,6 +63,10 @@ nav a {
     gap: 10px;
 }
 
+#ham {
+    display: none;
+}
+
 .sign-in {
     display: inline-flex;
     padding: 10px 20px;
@@ -239,6 +243,10 @@ nav a {
     justify-content: space-between;
 }
 
+.features .container .feature-cards .card img {
+    width: 70%;
+}
+
 
 .features .container .feature-cards .card .ftext {
     display: flex;
@@ -257,7 +265,7 @@ nav a {
     color: #000;
     font-family: Inter;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
                 /* End of features */
 
@@ -292,14 +300,19 @@ nav a {
     justify-content: space-around;
     margin-top: 70px;
 }
+
+
                 /* End of partners */
 
 
                 /* Testimonials */
                 /* Testimonials */
 .testimonials .container {
+    display: flex;
+    flex-direction: column;
     margin-top: 70px;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonials .container .heading {
@@ -327,6 +340,16 @@ nav a {
     justify-content: center;
     margin-top: 50px;
 }
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    margin-top: 20px;
+    width: 80%;
+}
+
             /* End of testimonial */
 
             /* footer */

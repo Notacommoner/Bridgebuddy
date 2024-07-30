@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Language Translator | CodingNepal</title>
+  <link rel="stylesheet" href="tra.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CDN Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-input">
+        <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+        <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row from">
+          <div class="icons">
+            <i id="from" class="fas fa-volume-up"></i>
+            <i id="from" class="fas fa-copy"></i>
+          </div>
+          <select id="source_lang">
+            <!-- Add options for source languages -->
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <!-- Add more languages as needed -->
+          </select>
+        </li>
+        <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+        <li class="row to">
+          <select id="target_lang">
+            <!-- Add options for target languages -->
+            <option value="es">Spanish</option>
+            <option value="en">English</option>
+            <!-- Add more languages as needed -->
+          </select>
+          <div class="icons">
+            <i id="to" class="fas fa-volume-up"></i>
+            <i id="to" class="fas fa-copy"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="formal-buttons">
+      <div class="formal">
+        <button onclick="setFormality('formal')">Formal</button>
+      </div>
+      <div class="casual">
+        <button onclick="setFormality('casual')">Casual</button>
+      </div>
+    </div>
+    <button onclick="translateText()">Translate Text</button>
+  </div>
+
+  <script>
+    let formality = 'neutral';
+
+    function setFormality(level) {
+      formality = level;
+    }
+
+    async function translateText() {
+      const text = document.querySelector(".from-text").value;
+      const sourceLang = document.getElementById("source_lang").value;
+      const targetLang = document.getElementById("target_lang").value;
+
+      const response = await fetch('/translate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          text: text,
+          source_lang: sourceLang,
+          target_lang: targetLang,
+          formality: formality
+        })
+      });
+
+      const result = await response.json();
+      document.querySelector(".to-text").value = result.translation;
+    }
+  </script>
+
+</body>
+
+</html>
